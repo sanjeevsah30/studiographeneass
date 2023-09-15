@@ -10,7 +10,7 @@ const Product = () => {
         <div className='heading flex  justify-between'>
             <div>
           <span className='text-[5.6rem] underline-md '>NEW PRODUCTS</span>
-          {/* <hr className="bg-black h-[1px] p-0" /> */}
+          <hr className="bg-black h-[1px] p-0" />
           </div>
           <div className=' flex justify-center items-center'>
             <LeftArrow className='cursor-pointer' width={"6.2rem"} />
