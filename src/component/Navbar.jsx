@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='top-navabar bg-[#1A1A1A] text-[#626262] font-normal mx-auto pb-3  '>
+      <div className='top-navabar bg-[#1A1A1A] text-[#626262] font-normal mx-auto pb-3'>
         <div className='container mx-auto  flex justify-between'>
           <div className='flex items-center justify-center text-xs'>
             <TranportSvg className='mr-2 ' />
@@ -40,8 +40,12 @@ const Navbar = () => {
           </div>
 
           <div className='flex items-center justify-center text-[10px] '>
-            <nav className='pr-5'>Login</nav>
-            <nav>Follow us</nav>
+            <nav
+              className='pr-5 cursor-pointer hover:text-blue-500'
+            >
+              Login
+            </nav>
+            <nav className="cursor-pointer hover:text-blue-500">Follow us</nav>
             <div className='flex pl-4 mt-1.5'>
               <nav>
                 <FacebookSvg />
@@ -63,17 +67,14 @@ const Navbar = () => {
         <div className='secondNvabar container mx-auto  flex justify-between items-end pt-2 pb-1 text-[#FFFFFF]'>
           <div>
             <span className='text-[2.5rem] font-extralight '>ShopKart</span>
-
           </div>
 
           <div className=' text-sm font-normal mb-1 cart'>
             <span className=' pr-2'>WISHLIST (0)</span>
             <span>BAG (0)</span>
           </div>
-        
         </div>
-        <hr className="container mx-auto "/>
-       
+        <hr className='container mx-auto ' />
 
         <div
           className={`topnav${
@@ -90,7 +91,9 @@ const Navbar = () => {
 
               <div className='dropdown-content flex justify-center items-center'>
                 {item?.child?.map((item, index) => (
-                  <a href= "#" key={index}>{item.name}</a>
+                  <a href='#' key={index}>
+                    {item.name}
+                  </a>
                 ))}
               </div>
             </div>

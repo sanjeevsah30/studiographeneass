@@ -99,5 +99,17 @@
   .feedback {
     align-items: center;
     flex-direction: column;
+
+    .newsletter{
+      padding-bottom: 1rem;
+    }
+    input[type="text"] {
+      width: 100%;}
+  
+      input[type="email"] {
+        width: 100%;
+  
   }
+  }
+
 }

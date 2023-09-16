@@ -1,5 +1,5 @@
 import './App.css';
-import './style/banner.scss';
+import './style/common.scss';
 
 import Home from './component/Home';
 
